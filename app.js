@@ -13,6 +13,7 @@ Then he  would feel (feeling)!.
 
 
 // user input
+let numberofQuestions = 10;
 let userInputs = [
     `Please enter describing word`,
     `Please enter any animal name`,
