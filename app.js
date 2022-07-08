@@ -10,7 +10,7 @@ Then he  would feel (feeling)!.
 
 
 // start coding here 
-// user variable input
+// user question variable input
 let questionArray = [
     `Please enter describing word`,
     `Please enter any animal name`,
@@ -21,21 +21,23 @@ let questionArray = [
     `Please enter action word`,
     `Please enter any song title`,
     `Please enter describing feeling`,
+    `Please enter another describing feeling`,
     `Please enter language`,
 ];
 
-let numberofQuestions = questionArray.length;
+let numberofQuestions = 10;
 let questionCounter = 0;
 
-// logic 
+// logic user input
 
 let userInputs = [];
-
 for ( let i = numberofQuestions ; i >= 0 ; i--){
     // console.log(i);
     // console.log(questionCounter);
     // console.log(questionArray[questionCounter]);
-    console.log(questionArray[questionCounter] + `\n(${numberofQuestions} questions left)`)
+    userInputs.push(
+    prompt(questionArray[questionCounter] + `\n(${numberofQuestions} questions left)`)
+    );
     questionCounter++;
     numberofQuestions--;
 }
@@ -43,10 +45,10 @@ for ( let i = numberofQuestions ; i >= 0 ; i--){
 
 
 // original story
-    // let originalStory = `There once was a ${userInputs[0]} ${userInputs[1]} from ${userInputs[2]}.
-    // Nobody knew he was a ${userInputs[1]} because he had ${userInputs[3]} fur and ate ${userInputs[4]} ${userInputs[5]} each day.
-    // He like to ${userInputs[6]} and sing ${userInputs[7]}. 
-    // Whenever he was ${userInputs[8]}. he would start speaking ${userInputs[9]}.
-    // Then he  would feel ${userInputs[8]}!.`;
-    // prompt(userInputs);
-    // console.log(originalStory);
+    let originalStory = `There once was a ${userInputs[0]} ${userInputs[1]} from ${userInputs[2]}. Nobody knew he was a ${userInputs[1]} because he had ${userInputs[3]} fur and ate ${userInputs[4]} ${userInputs[5]} each day.
+    He like to ${userInputs[6]} and sing "${userInputs[7]}"!. Whenever he was ${userInputs[8]}, he would start speaking ${userInputs[10]}. Then he  would feel ${userInputs[9]}!.`;
+    
+    console.log(originalStory);
+    
+
+alert(`All Done! Ready for an animal tale? \" but ridiculous hahahahaa\"`)
