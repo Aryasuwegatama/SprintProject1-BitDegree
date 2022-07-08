@@ -1,0 +1,39 @@
+/* ====================================== */
+/* css reset & pre-set */
+/* ====================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* ====================================== */
+/* note:
+          1rem = 10px
+          0.5rem = 5px
+   */
+/* ====================================== */
+/* START STYLING BRO! */
+
+/* h2 {
+  border: 0.5rem solid pink;
+  background-color: rgb(121, 117, 117);
+} */
+body {
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+h2 {
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 5px dotted pink;
+  background-color: lightblue;
+  padding: 5px;
+  text-align: center;
+  line-height: 3rem;
+}
