@@ -35,7 +35,7 @@ let userInputs = [];
 for ( let i = numberofQuestions ; i >= 0 ; i--){        
     let entered = prompt(questionArray[questionCounter] + `\n(${numberofQuestions} questions left)`);
     while (entered === "" || entered === null){
-        entered = prompt(questionArray[questionCounter] + `\n(${numberofQuestions} questions left)`);
+        entered = entered;
     }
     userInputs.push(entered);
 questionCounter++;
